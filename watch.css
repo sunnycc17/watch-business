@@ -27,6 +27,10 @@ a {
     color: black;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 #home {
     display: flex;
     padding: 10px;
@@ -65,4 +69,67 @@ a {
 img {
     width: 100%; /* Ensures images fit the grid area */
     height: auto;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+h2, h3 {
+    padding: 20px;
+    font-style: italic;
+}
+.info-text, .info-text2 {
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+#contact p {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#contact .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+#contact .social-media {
+    text-decoration: none;
+    color: var(--white);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 22px;
+}
+#contact .social-media:hover {
+    transform: translateX(10px);
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px !important;
+    padding: 10px;
+    background-color: rgb(60, 56, 56);
+    color: rgb(215, 206, 206);
 }
