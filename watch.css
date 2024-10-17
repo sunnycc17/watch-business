@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .headline {
     display: flex;
     justify-content: space-between;
@@ -93,6 +100,14 @@ h2, h3 {
     align-items: center;
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+}
+blockquote {
+    width: 560;
+    height: 315;
+}
 #contact p {
     display: flex;
     justify-content: center;
@@ -103,6 +118,7 @@ h2, h3 {
 }
 
 #contact .social-medias {
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
@@ -112,18 +128,16 @@ h2, h3 {
 }
 #contact .social-media {
     text-decoration: none;
-    color: var(--white);
     transition: transform 0.2s ease-in;
     display: flex;
     align-items: center;
     margin: 20px;
-    font-size: 22px;
+    font-size: 25px;
+    font-style: italic;
 }
 #contact .social-media:hover {
     transform: translateX(10px);
 }
-
-
 
 footer {
     display: flex;
